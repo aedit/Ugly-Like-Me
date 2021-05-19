@@ -4,6 +4,10 @@
   "description": "Just a normal VS Code theme trying to become as ugly as possible",
   "version": "0.0.1",
   "publisher": "aedit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aedit/Ugly-Like-Me.git"
+  },
   "engines": {
     "vscode": "^1.56.0"
   },
