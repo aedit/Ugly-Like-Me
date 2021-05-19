@@ -1,13 +1,9 @@
 # README
-## This is the README for your extension "ugly-like-me"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+## This is the README for the extension "ugly-like-me"
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Just a random VS Code Extension Trying to be as ugly as possible.
+I know, nothing is born ugly, everything takes it route and time to reach there. I believe soon this theme will reach its perks too!
 
-**Enjoy!**
+Wanna help me turn it to the ugliest theme out there? SO UGLY THAT EVEN WE HATE TO APPLY IT!
+Come raise your MRs at [Ugly Like Me](https://github.com/Ugly-Like-Me) and welcome to the UGLY SIDE!
