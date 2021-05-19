@@ -1,21 +1,22 @@
 {
-    "name": "ugly-like-me",
-    "displayName": "Ugly Like Me",
-    "description": "Just a normal VS Code theme trying to become as ugly as possible",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.56.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Ugly Like Me",
-                "uiTheme": "hc-black",
-                "path": "./themes/Ugly Like Me-color-theme.json"
-            }
-        ]
-    }
+  "name": "ugly-like-me",
+  "displayName": "Ugly Like Me",
+  "description": "Just a normal VS Code theme trying to become as ugly as possible",
+  "version": "0.0.1",
+  "publisher": "Udit Sen",
+  "engines": {
+    "vscode": "^1.56.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Ugly Like Me",
+        "uiTheme": "hc-black",
+        "path": "./themes/Ugly Like Me-color-theme.json"
+      }
+    ]
+  }
 }
