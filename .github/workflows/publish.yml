@@ -6,6 +6,9 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # lets ovsx publish via Open VSX trusted publishing (no token)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -14,4 +17,4 @@ jobs:
       - run: npm run check
       - run: npx @vscode/vsce package -o ugly-like-me.vsix
       - run: npx @vscode/vsce publish --packagePath ugly-like-me.vsix -p ${{ secrets.VSCE_PAT }}
-      - run: npx ovsx publish ugly-like-me.vsix -p ${{ secrets.OVSX_PAT }}
+      - run: npx ovsx@1.2.0 publish ugly-like-me.vsix --trusted-publishing --skip-duplicate
