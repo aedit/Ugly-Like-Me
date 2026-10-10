@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       - run: npm run check
       - run: npx @vscode/vsce package -o ugly-like-me.vsix
-      - run: npx @vscode/vsce publish --packagePath ugly-like-me.vsix -p ${{ secrets.VSCE_PAT }}
+      - run: npx @vscode/vsce publish --packagePath ugly-like-me.vsix --skip-duplicate -p ${{ secrets.VSCE_PAT }}
       - run: npx ovsx@1.2.0 publish ugly-like-me.vsix --trusted-publishing --skip-duplicate
