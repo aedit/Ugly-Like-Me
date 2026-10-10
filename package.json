@@ -1,25 +1,55 @@
 {
   "name": "ugly-like-me",
   "displayName": "Ugly Like Me",
-  "description": "Just a normal VS Code theme trying to become as ugly as possible",
-  "version": "0.0.1",
+  "description": "A VS Code theme on a mission to become as ugly as possible. Disgusting, yet legible.",
+  "version": "1.0.0",
   "publisher": "aedit",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#4A3F29",
+    "theme": "dark"
+  },
+  "keywords": [
+    "ugly",
+    "funny",
+    "meme",
+    "joke",
+    "hot dog stand",
+    "theme",
+    "dark",
+    "light"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/aedit/Ugly-Like-Me.git"
   },
+  "bugs": {
+    "url": "https://github.com/aedit/Ugly-Like-Me/issues"
+  },
+  "homepage": "https://github.com/aedit/Ugly-Like-Me#readme",
   "engines": {
     "vscode": "^1.56.0"
   },
   "categories": [
     "Themes"
   ],
+  "scripts": {
+    "build": "node build.js",
+    "check": "node build.js --check",
+    "vscode:prepublish": "npm run check && npm run build"
+  },
   "contributes": {
     "themes": [
       {
         "label": "Ugly Like Me",
-        "uiTheme": "hc-black",
-        "path": "./themes/Ugly Like Me-color-theme.json"
+        "uiTheme": "vs-dark",
+        "path": "./themes/ugly-like-me-color-theme.json"
+      },
+      {
+        "label": "Ugly Like Me: Hot Dog Stand",
+        "uiTheme": "vs",
+        "path": "./themes/hot-dog-stand-color-theme.json"
       }
     ]
   }
